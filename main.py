@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 
 def get_techniques():
-    file = "file.json"
+    file = args.file
     techniques = []
     with open(file, "r+") as jsonfile:
         file = json.load(jsonfile)
